@@ -1,0 +1,20 @@
+{
+  "tests": "tests/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "https://www.google.com/",
+      "browser": "chrome"
+    }
+  },
+      "include": {
+        "I": "./steps_file.js",
+        "steps": "./steps_file.js",
+        "landingPage": "./pages/landing.page.js",
+        "data": "./data.js"
+      },
+      "bootstrap": false,
+      "mocha": {},
+      "name": "automated-tests-calculator"
+}

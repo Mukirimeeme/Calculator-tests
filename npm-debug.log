@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.1.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'selenium-standalone' ]
+2 info using npm@3.10.10
+3 info using node@v7.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData selenium-standalone@^6.14.1
+8 silly fetchNamedPackageData selenium-standalone
+9 silly mapToRegistry name selenium-standalone
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://10.30.1.150:8081/nexus/content/groups/npm-all
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'selenium-standalone',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'selenium-standalone',
+12 silly mapToRegistry   name: 'selenium-standalone',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://10.30.1.150:8081/nexus/content/groups/npm-all/selenium-standalone
+14 verbose request uri http://10.30.1.150:8081/nexus/content/groups/npm-all/selenium-standalone
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:16:23 AM
+17 verbose request id 18f8ea4e0182f3cc
+18 http request GET http://10.30.1.150:8081/nexus/content/groups/npm-all/selenium-standalone
+19 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.30.1.150:8081
+20 info attempt registry request try #2 at 9:17:48 AM
+21 http request GET http://10.30.1.150:8081/nexus/content/groups/npm-all/selenium-standalone
+22 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 10.30.1.150:8081
+23 info attempt registry request try #3 at 9:20:04 AM
+24 http request GET http://10.30.1.150:8081/nexus/content/groups/npm-all/selenium-standalone
+25 silly fetchPackageMetaData Error: connect ETIMEDOUT 10.30.1.150:8081
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+25 silly fetchPackageMetaData  error for selenium-standalone@^6.14.1 { Error: connect ETIMEDOUT 10.30.1.150:8081
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+25 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+25 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+25 silly fetchPackageMetaData   syscall: 'connect',
+25 silly fetchPackageMetaData   address: '10.30.1.150',
+25 silly fetchPackageMetaData   port: 8081 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ETIMEDOUT 10.30.1.150:8081
+30 verbose stack     at Object.exports._errnoException (util.js:1022:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:1045:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1090:14)
+31 verbose cwd /Users/innocentmeeme/Downloads/automated-tests-calculator
+32 error Darwin 17.5.0
+33 error argv "/usr/local/Cellar/node/7.1.0/bin/node" "/usr/local/bin/npm" "i" "selenium-standalone"
+34 error node v7.1.0
+35 error npm  v3.10.10
+36 error code ETIMEDOUT
+37 error errno ETIMEDOUT
+38 error syscall connect
+39 error network connect ETIMEDOUT 10.30.1.150:8081
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]

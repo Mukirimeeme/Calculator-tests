@@ -1,0 +1,19 @@
+{
+  "name": "automated-tests-calculator",
+  "version": "1.0.0",
+  "description": "Automated tests for the Gbase Traffic Instruction Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run --steps"
+  },
+
+  "author": "Innocent meeme",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.38.3",
+    "codeceptjs": "^1.1.7",
+    "faker": "^4.1.0",
+    "node": "^9.11.0",
+    "selenium-standalone": "^6.14.1"
+  }
+}

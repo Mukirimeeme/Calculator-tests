@@ -1,0 +1,11 @@
+
+'use strict';
+// in this file you can append custom step methods to 'I' object
+
+module.exports = function() {
+  return actor({
+      testEnvironment:function (url) {
+          this.amOnPage(url);
+      }
+  });
+}
